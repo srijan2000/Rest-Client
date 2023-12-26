@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_vendor?useSSL = false
+    username: root
+    password: root
+
+
+
+#JPA Setting
+  jpa.hibernate.ddl_auto: update
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
